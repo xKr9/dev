@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Path } from 'react-router-dom'
 import ProjectCard from '../components/Projects/ProjectCard'
-import projectsJSON from '../assets/data/projects.json'
+import projectsJSON from '../assets/data/projects'
 
 interface Project{
     image: string,
