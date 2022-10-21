@@ -12,7 +12,7 @@ interface Props {
 
 export default function ProjectCard({title, subtext, image, link}: Props) {
   return (
-    <Link to={'/dev/' + link}>
+    <Link to={'/dev/projects/' + link}>
         <div className='flex gap-y-2 flex-col rounded-lg'>
             <img src={image} className='h-[300px] rounded-lg object-center object-cover' alt='project-image' />
             <div className="text-left flex gap-y-5 flex-col">

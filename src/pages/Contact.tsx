@@ -1,7 +1,4 @@
 import { Icon } from '@iconify/react'
-import React from 'react'
-import profile from '../assets/profile-pic.jpeg'
-import Button from '../components/shared/Button'
 
 export default function Contact() {
   return (

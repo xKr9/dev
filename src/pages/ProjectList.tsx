@@ -11,7 +11,7 @@ interface Project{
     link: Partial<Path>,
 }
 
-export default function Projects() {
+export default function ProjectList() {
   const [projects, setProjects] = useState<Project[]>(projectsJSON.data)
   return (
     <div>
