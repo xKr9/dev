@@ -1,14 +1,22 @@
 import { Icon } from '@iconify/react'
-import { useParams } from 'react-router-dom'
+import { Path, useParams } from 'react-router-dom'
 // @ts-ignore
 import projects from '../assets/data/projects.js'
 import Pill from '../components/Pill.js'
 
+interface Project{
+    image: string,
+    title: String,
+    subtext: String,
+    link: Partial<Path>,
+    tech: Array<String>
+}
+
 export default function Project() {
   const {slug} = useParams()
-  const project = projects.data.filter((project) => {
+  const project = projects.data.find((project) => {
     return project.link == slug
-  }).find(Boolean)
+  })
   return (
     <div className="w-full">
         <div className="max-w-fit">
