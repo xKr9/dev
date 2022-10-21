@@ -11,7 +11,8 @@ module.exports = {
         },
         'red': {
           'crimson': '#D7263D'
-        }
+        },
+        'primary': '#ec347a'
       }
     },
   },

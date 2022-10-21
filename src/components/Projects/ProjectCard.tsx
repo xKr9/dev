@@ -13,11 +13,11 @@ interface Props {
 export default function ProjectCard({title, subtext, image, link}: Props) {
   return (
     <Link to={'/dev/' + link}>
-        <div className='flex gap-y-2 flex-col border border-white border-opacity-40 rounded-lg'>
-            <img src={image} className='h-[400px] rounded-t-lg object-center object-cover' alt='project-image' />
-            <div className="text-left flex gap-y-5 p-6 flex-col">
-                <h2 className='font-bold text-3xl'>{title}</h2>
-                <p className='font-thin text-xs'>{subtext}</p>
+        <div className='flex gap-y-2 flex-col rounded-lg'>
+            <img src={image} className='h-[300px] rounded-lg object-center object-cover' alt='project-image' />
+            <div className="text-left flex gap-y-5 flex-col">
+                <h2 className='font-bold text-primary text-xl'>{title}</h2>
+                <p className='font-thin text-base'>{subtext}</p>
                 <div className="flex items-center gap-x-2 text-green-500 font-bold">
                   <p>Learn More</p>
                   <Icon icon={'akar-icons:arrow-right'} height={20} />

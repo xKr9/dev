@@ -2,7 +2,7 @@ import React from 'react'
 
 interface Props {
     text: String,
-    classNames: String
+    classNames?: String
 }
 
 const Button = ( { text, classNames }: Props) => {
