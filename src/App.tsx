@@ -9,7 +9,7 @@ import Projects from './pages/Projects'
 
 function App() {
   return (
-    <div className='px-4 h-full pb-10'>
+    <div className='px-4 h-full pb-10 max-w-7xl mx-auto'>
       <Header />
       <Routes>
         <Route path='/dev/' element={<Home />}/>
