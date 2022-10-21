@@ -12,13 +12,3 @@
 *{
   font-family: 'Montserrat', sans-serif;
 }
-
-.pulse-btn:hover, 
-.pulse-btn:focus {
-  animation: pulse-btn 1s;
-  box-shadow: 0 0 0 2em transparent;
-}
-
-@keyframes pulse-btn {
-  0% { box-shadow: 0 0 0 0 red}
-}

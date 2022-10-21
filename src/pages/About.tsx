@@ -5,7 +5,11 @@ import Button from '../components/shared/Button'
 export default function About() {
   return (
     <div className="w-full">
-        <h1 className='text-5xl text-left font-bold'>About me</h1>
+        <div className="max-w-fit">
+            <h1 className='lg:text-5xl text-4xl  text-left font-bold mb-5'>About me</h1>
+            <h2 className='lg:text-3xl text-2xl text-left font-bold'>Want to know more? 🤔</h2>
+            <div className="w-1/4 h-1 bg-primary"></div>
+        </div>
         <div className="mt-10 flex justify-center mx-auto flex-col max-w-[1280px] items-center gap-y-5">
             <img className='rounded-full w-52 h-52 object-cover' src={profile} alt="handsome-developer-picture" />
             <h2 className='font-bold text-3xl'>Dominik Grad</h2>
