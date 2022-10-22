@@ -15,8 +15,8 @@ export default function Home() {
     </div>
   <PageTransition>
     <div className="mt-40 flex justify-center mx-auto text-left flex-col max-w-[1280px] items-center gap-y-5">
-      <div className="flex flex-col gap-5 lg:flex-row lg:items-center">
-        <div className="flex flex-col gap-y-5">
+      <div className="flex flex-col gap-5 lg:flex-row items-center lg:place-content-between">
+        <div className="flex lg:self-start flex-col gap-y-5">
           <h2 className='font-bold text-6xl'>
             I'm Dom
           </h2>
