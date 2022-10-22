@@ -4,6 +4,7 @@
   margin: 0 auto;
   padding: 2rem 1rem;
   background: #262626;
+  overflow-x: hidden;
   text-align: center;
   color: white;
   min-height: 100vh;

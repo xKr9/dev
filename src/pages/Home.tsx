@@ -3,7 +3,7 @@ import Button from '../components/shared/Button'
 
 export default function Home() {
   return (
-    <div className="flex items-center justify-center h-full">
+    <div className="flex items-center justify-center">
         <div className="text-left flex flex-col gap-y-2">
             <h1 className='font-bold text-4xl'>Hey, I'm Dom!</h1>
             <h2 className='text-sm'>Software Engineer looking to build cool shit</h2>

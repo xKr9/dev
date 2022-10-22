@@ -26,7 +26,7 @@ export default function Project() {
         <div className="flex flex-col mt-10 justify-center gap-y-5">
             <img src={project.image} className='h-[500px] object-cover object-left lg:object-center' alt="" />
             <div className="text-left">
-                <p className='text-left text-base font-thin'>
+                <p className='text-left text-base font-thin whitespace-pre-line'>
                     {project.description}
                 </p>
                 <h2 className='font-bold text-xl mt-5'>Technologies used</h2>
