@@ -1,9 +1,8 @@
 import React from 'react'
 import profile from '../assets/profile-pic.jpeg'
-import Button from '../components/shared/Button'
 import PageTransition from '../components/Transitions/PageTransition'
-import { motion } from 'framer-motion'
 import Underline from '../components/Underline'
+import CV from '../assets/DomGradCV.pdf'
 
 export default function About() {
   return (
@@ -25,7 +24,7 @@ export default function About() {
                         <span className='font-bold text-blue-500'> @CoreBlue</span> and working <span className='text-[#985fbe] font-bold'>@Hatless Studios</span> for now my 3rd year, I've been incredibly lucky to learn from some awesome people.</p>
                     <p>Always looking to expand my knowledge in the tech field and build products that can make a difference!</p>
                 </div>
-                <Button text={'Want to see my CV? Here!'}></Button>
+                <a href={CV} className='border border-primary rounded-full px-8 py-3 hover:scale-110 transition-all' download>Check out my CV!</a>
             </div>
           </PageTransition>
       </div>

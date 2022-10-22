@@ -10,7 +10,7 @@ import { AnimatePresence } from 'framer-motion'
 
 function App() {
   return (
-    <div className='pb-10 relative max-w-5xl mx-auto'>
+    <div className='pb-10 flex flex-col relative max-w-5xl mx-auto'>
       <Header />
       <AnimatePresence mode='wait'>
         <Routes>

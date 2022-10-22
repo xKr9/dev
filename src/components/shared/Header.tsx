@@ -11,6 +11,7 @@ const Sidebar = ({isOpen, onClose}) => {
     return (
         <>
         <motion.div
+            initial={{x: '200%', opacity: 0}}
             onClick={onClose}
             animate={isOpen ? "open" : "closed"}
             variants={variants}
