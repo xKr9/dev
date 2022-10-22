@@ -16,7 +16,7 @@ const Sidebar = ({isOpen, onClose}) => {
             animate={isOpen ? "open" : "closed"}
             variants={variants}
             transition={{ duration: 0.75 }}
-            className='flex bg-grey-dark z-20 w-1/2 justify-evenly text-3xl font-bold overflow-hidden h-screen fixed flex-col top-0 right-0 p-6 gap-y-5'>
+            className='flex bg-grey-dark z-20 w-3/4 lg:w-1/2 justify-evenly text-3xl font-bold overflow-hidden h-screen fixed flex-col top-0 right-0 p-6 gap-y-5'>
                 <motion.div 
                     whileHover={{scale: 1.1}}
                     >
