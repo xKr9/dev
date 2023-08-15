@@ -1,4 +1,9 @@
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
+
 export default function Experience() {
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true });
   return (
     <section className="flex flex-col gap-y-5">
       <div className="flex">
@@ -6,6 +11,15 @@ export default function Experience() {
           <span className="text-primary mr-2">[1].</span>Where I've worked.
         </h2>
       </div>
+      <motion.div
+        style={{
+          width: inView ? "75%" : "0%",
+          opacity: inView ? 1 : 0,
+          transition: "all 1.5s",
+        }}
+        ref={ref}
+        className="h-1 bg-primary"
+      ></motion.div>
       <p>
         My journey in the world of technology and web development has been an
         exciting and fulfilling one. It all began when I attended University of

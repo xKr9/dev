@@ -1,6 +1,6 @@
 export default function Landing() {
   return (
-    <section className="min-h-[90vh]">
+    <section className="min-h-[90vh] flex justify-center flex-col">
       <h1 className="text-4xl lg:text-8xl">Dominik Grad.</h1>
       <h2 className="mt-2 text-3xl lg:text-5xl">
         I like to build cool shit for the web.
