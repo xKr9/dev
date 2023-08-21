@@ -5,7 +5,23 @@ export default function About() {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true });
   return (
-    <section className="flex flex-col gap-y-5">
+    <motion.section
+      initial={{
+        opacity: 0,
+        translateY: "-20px",
+      }}
+      whileInView={{
+        opacity: 1,
+        translateY: "0",
+      }}
+      transition={{
+        duration: 0.5,
+      }}
+      viewport={{
+        once: true,
+      }}
+      className="flex flex-col gap-y-5"
+    >
       <h2 className="text-5xl">
         <span className="text-primary mr-2">[0].</span>About Me.
       </h2>
@@ -67,6 +83,6 @@ export default function About() {
         committed to creating impactful web experiences and pushing the
         boundaries of what's possible in the ever-evolving digital landscape.
       </p>
-    </section>
+    </motion.section>
   );
 }

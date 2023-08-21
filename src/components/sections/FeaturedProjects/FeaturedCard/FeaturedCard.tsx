@@ -14,18 +14,21 @@ export default function FeatureCard({
   idx,
 }: Props) {
   return (
-    <div className="rounded-lg grid grid-cols-12 group cursor-pointer">
-      <div className="col-span-6 bg-red-500">
+    <div className={`rounded-lg flex group cursor-pointer`}>
+      <div className="md:block hidden w-full bg-white">
         <img
           src={img}
-          className="aspect-[2/1] object-cover blur-sm group-hover:blur-none transition-all cursor-pointer duration-200"
-          alt=""
+          className="aspect-[2/1] h-full object-cover blur-sm group-hover:blur-none transition-all cursor-pointer duration-200"
+          alt={`${title}-img`}
         />
       </div>
-      <div className="col-span-6 flex flex-col items-end text-right px-5">
-        <h1 className="text-primary font-bold">Featured Project</h1>
+      <div className={`w-full flex flex-col px-5 ${" text-right items-end"}`}>
+        <h2 className="text-primary font-bold">Featured Project</h2>
+        <h1 className="text-3xl font-bold mb-5">{title}</h1>
         <p>{description}</p>
-        <div className="flex mt-auto gap-x-2 gap-y-1 justify-end flex-wrap">
+        <div
+          className={`flex mt-10 md:mt-auto gap-x-2 gap-y-1 justify-end flex-wrap `}
+        >
           {pills.map((pill, idx) => {
             return (
               <p className="flex items-center gap-x-2">
