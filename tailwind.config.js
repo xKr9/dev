@@ -17,7 +17,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        default: ["REM", "sans-serif"],
+        primary: ["Nunito Sans"],
       },
       colors: {
         primary: "#d90368",
