@@ -1,8 +1,11 @@
 import FeatureCard from "./FeaturedCard/FeaturedCard";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import data from "./data";
+import { useRef } from "react";
 
 export default function FeaturedProjects() {
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true });
   return (
     <motion.section
       initial={{
@@ -21,10 +24,19 @@ export default function FeaturedProjects() {
       }}
       className="flex flex-col gap-y-8"
     >
-      <div className="flex">
+      <div className="flex flex-col gap-y-5">
         <h2 className="text-5xl w-full">
           <span className="text-primary mr-2">[2].</span>Featured Projects.
         </h2>
+        <motion.div
+          style={{
+            width: inView ? "75%" : "0%",
+            opacity: inView ? 1 : 0,
+            transition: "all 1.5s",
+          }}
+          ref={ref}
+          className="h-1 bg-primary"
+        ></motion.div>
       </div>
       <div className="flex flex-col gap-y-5">
         {data.map((project, idx) => {
