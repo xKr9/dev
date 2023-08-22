@@ -52,7 +52,7 @@ export default function Experience() {
           onSelect={(e) => setSelectedTile(e)}
         />
         <DetailsBox
-          detail={data.find((detail) => detail.id === selectedTile)}
+          detail={data?.find((detail) => detail.id === selectedTile) ?? data[0]}
         />
       </div>
     </motion.section>
