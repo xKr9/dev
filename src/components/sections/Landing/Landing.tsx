@@ -16,7 +16,7 @@ export default function Landing() {
           duration: 0.5,
           delay: 0.1,
         }}
-        className="text-4xl lg:text-8xl font-bold"
+        className="text-6xl text-white lg:text-8xl font-bold"
       >
         Dominik Grad.
       </motion.h1>
@@ -33,7 +33,7 @@ export default function Landing() {
           duration: 0.5,
           delay: 0.2,
         }}
-        className="mt-2 text-3xl lg:text-5xl"
+        className="mt-2 text-3xl lg:text-5xl text-accent"
       >
         I like to build cool shit for the web.
       </motion.h2>
@@ -50,11 +50,11 @@ export default function Landing() {
           duration: 0.5,
           delay: 0.3,
         }}
-        className="mt-2"
+        className="mt-2 text-accent max-w-[500px] md:max-w-[650px]"
       >
         Welcome! I'm a Software Engineer that likes to build cool shit that
         makes a difference to people. Currently the Co-Head of Tech{" "}
-        <span>@HatlessStudios 🎩</span>.
+        <span className="text-primary font-semibold">@HatlessStudios 🎩</span>.
       </motion.p>
     </motion.section>
   );

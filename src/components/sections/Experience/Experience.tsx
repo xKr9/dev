@@ -1,11 +1,16 @@
 import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useState } from "react";
+import TileSelector from "./TileSelector";
+import DetailsBox from "./DetailsBox";
+import data from "./data";
 
 export default function Experience() {
+  const [selectedTile, setSelectedTile] = useState(1);
   const ref = useRef(null);
   const inView = useInView(ref, { once: true });
   return (
     <motion.section
+      id="experience"
       initial={{
         opacity: 0,
         translateY: "-20px",
@@ -18,12 +23,13 @@ export default function Experience() {
         duration: 0.5,
       }}
       viewport={{
+        amount: 0.7,
         once: true,
       }}
       className="flex flex-col gap-y-5"
     >
       <div className="flex">
-        <h2 className="text-5xl w-full">
+        <h2 className="text-3xl lg:text-5xl">
           <span className="text-primary mr-2">[1].</span>Where I've worked.
         </h2>
       </div>
@@ -36,12 +42,19 @@ export default function Experience() {
         ref={ref}
         className="h-1 bg-primary"
       ></motion.div>
-      <p>
+      <p className="text-accent">
         My journey in the world of technology and web development has been an
-        exciting and fulfilling one. It all began when I attended University of
-        Exeter, where I laid the foundation for my passion for coding and
-        creating innovative web solutions.
+        exciting and fulfilling one. Here are some cool places I've worked at.
       </p>
+      <div className="flex sm:flex-row flex-col gap-y-10 gap-x-10">
+        <TileSelector
+          selected={selectedTile}
+          onSelect={(e) => setSelectedTile(e)}
+        />
+        <DetailsBox
+          detail={data.find((detail) => detail.id === selectedTile)}
+        />
+      </div>
     </motion.section>
   );
 }

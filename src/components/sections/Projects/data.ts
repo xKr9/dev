@@ -32,7 +32,7 @@ const data = [
     link: "/projects/quidland",
   },
   {
-    title: "PostTag Dashboard",
+    title: "Analytics Dashboard",
     description:
       "An internal dashboard for PostTag to manage their clients data usage.",
     img: posttag,
@@ -40,7 +40,7 @@ const data = [
     link: "/projects/posttag-dashboard",
   },
   {
-    title: "ScreenDM",
+    title: "Student Art Platform",
     description:
       "Web platform for film students to share their work and connect with other students and industry professionals.",
     img: screendm,
@@ -48,7 +48,7 @@ const data = [
     link: "/projects/screendm",
   },
   {
-    title: "Kurb",
+    title: "Carbon Footprint Calculator",
     description:
       "Web application designed to calculate the carbon footprint for projects, on a small scale project-by-project basis",
     pills: ["React", "TypeScript", "Tailwind", "RadixUI"],

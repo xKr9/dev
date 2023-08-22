@@ -3,14 +3,7 @@ import data from "./data";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
-const ProjectItem = ({
-  title,
-  img,
-  description,
-}: {
-  title: string;
-  img: string;
-}) => {
+const ProjectItem = ({ title, img }: { title: string; img: string }) => {
   return (
     <div className="bg-white relative group aspect-square cursor-pointer">
       <img
@@ -30,10 +23,27 @@ export default function Projects() {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true });
   return (
-    <section className="flex flex-col gap-y-5">
+    <motion.section
+      initial={{
+        opacity: 0,
+        translateY: "-20px",
+      }}
+      whileInView={{
+        opacity: 1,
+        translateY: "0",
+      }}
+      transition={{
+        duration: 0.5,
+      }}
+      viewport={{
+        amount: 0.2,
+        once: true,
+      }}
+      className="flex flex-col gap-y-5"
+    >
       <div className="flex flex-col gap-y-10">
         <div className="flex flex-col gap-y-5">
-          <h2 className="text-5xl w-full">
+          <h2 className="text-3xl lg:text-5xl">
             <span className="text-primary mr-2">[3].</span>Other Projects.
           </h2>
           <motion.div
@@ -50,13 +60,13 @@ export default function Projects() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:grid-cols-3">
           {data.map((project) => {
             return (
-              <Link to={`${project.link}`}>
+              <Link to={`${project.link}`} key={project.title}>
                 <ProjectItem title={project.title} img={project.img} />
               </Link>
             );
           })}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

@@ -8,6 +8,7 @@ export default function FeaturedProjects() {
   const inView = useInView(ref, { once: true });
   return (
     <motion.section
+      id="work"
       initial={{
         opacity: 0,
         translateY: "-20px",
@@ -20,12 +21,13 @@ export default function FeaturedProjects() {
         duration: 0.5,
       }}
       viewport={{
+        amount: 0.7,
         once: true,
       }}
       className="flex flex-col gap-y-8"
     >
       <div className="flex flex-col gap-y-5">
-        <h2 className="text-5xl w-full">
+        <h2 className="text-3xl lg:text-5xl">
           <span className="text-primary mr-2">[2].</span>Featured Projects.
         </h2>
         <motion.div
@@ -42,6 +44,7 @@ export default function FeaturedProjects() {
         {data.map((project, idx) => {
           return (
             <FeatureCard
+              key={project.title}
               img={project.img}
               title={project.title}
               idx={idx}
