@@ -1,28 +1,33 @@
-import './App.css'
-import { Route, Routes } from 'react-router-dom'
-import Home from './pages/Home'
-import Header from './components/shared/Header'
-import About from './pages/About'
-import ProjectList from './pages/ProjectList'
-import Contact from './pages/Contact'
-import Project from './pages/Project'
-import { AnimatePresence } from 'framer-motion'
+import { Route, Routes } from "react-router-dom";
+import Main from "./pages/Main";
+import Project from "./pages/Project";
+import LeftFooter from "./components/footers/LeftFooter";
+import Navbar from "./components/navbar/Navbar";
 
 function App() {
   return (
-    <div className='pb-10 flex flex-col relative max-w-5xl mx-auto'>
-      <Header />
-      <AnimatePresence mode='wait'>
-        <Routes>
-          <Route path='/dev/' element={<Home />}/>
-          <Route path='/dev/about' element={<About />} />
-          <Route path='/dev/projects' element={<ProjectList />} />
-          <Route path='/dev/projects/:slug' element={<Project />} />
-          <Route path='/dev/contact' element={<Contact />} />
-        </Routes>
-      </AnimatePresence>
-    </div>
-  )
+    <main className="bg-[#0a192f] text-secondary relative min-h-screen pb-32 font-primary w-full font-default text-white">
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/projects/:project" element={<Project />} />
+        <Route
+          path="*"
+          element={
+            <h1 className="text-5xl flex flex-col h-screen gap-y-5 items-center justify-center">
+              Why do you have to ruin the site :(
+              <button>
+                <a href="/" className="text-primary font-bold">
+                  Go back
+                </a>
+              </button>
+            </h1>
+          }
+        />
+      </Routes>
+      <LeftFooter />
+    </main>
+  );
 }
 
-export default App
+export default App;
