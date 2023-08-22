@@ -6,7 +6,7 @@ import Navbar from "./components/navbar/Navbar";
 
 function App() {
   return (
-    <main className="bg-[#0a192f] text-secondary relative min-h-screen pb-32 font-primary w-full font-default text-white">
+    <main className="bg-[#0a192f] text-secondary relative min-h-screen pb-32 font-primary w-full font-default">
       <Navbar />
       <Routes>
         <Route path="/dev/" element={<Main />} />
