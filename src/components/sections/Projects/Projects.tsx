@@ -60,7 +60,7 @@ export default function Projects() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:grid-cols-3">
           {data.map((project) => {
             return (
-              <Link to={`/dev/${project.link}`} key={project.title}>
+              <Link to={`/dev${project.link}`} key={project.title}>
                 <ProjectItem title={project.title} img={project.img} />
               </Link>
             );
