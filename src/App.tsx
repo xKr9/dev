@@ -9,8 +9,8 @@ function App() {
     <main className="bg-[#0a192f] text-secondary relative min-h-screen pb-32 font-primary w-full font-default text-white">
       <Navbar />
       <Routes>
-        <Route path="/" element={<Main />} />
-        <Route path="/projects/:project" element={<Project />} />
+        <Route path="/dev/" element={<Main />} />
+        <Route path="/dev/projects/:project" element={<Project />} />
         <Route
           path="*"
           element={
