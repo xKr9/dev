@@ -1,14 +1,23 @@
+import { Link } from "react-router-dom";
+
 type Props = {
   title: string;
   description: string;
   pills: string[];
   img: string;
   idx: number;
+  link: string;
 };
 
-export default function FeatureCard({ title, description, pills, img }: Props) {
+export default function FeatureCard({
+  title,
+  description,
+  pills,
+  img,
+  link,
+}: Props) {
   return (
-    <div className={`flex group cursor-pointer`}>
+    <Link to={link} className={`flex group cursor-pointer`}>
       <div className="md:block hidden w-full bg-primary">
         <img
           src={img}
@@ -37,6 +46,6 @@ export default function FeatureCard({ title, description, pills, img }: Props) {
           })}
         </div>
       </div>
-    </div>
+    </Link>
   );
 }

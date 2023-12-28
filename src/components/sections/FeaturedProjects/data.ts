@@ -9,6 +9,7 @@ const data = [
       "A language learning application for children to practice their language listening, reading and writing skills via fun-to-play games, with a space theme.",
     img: pln,
     pills: ["Vue", "Django", "MySQL", "Tailwind", "JavaScript"],
+    link: "/projects/primary-languages-network",
   },
   {
     title: "A.M.A Selections",
@@ -25,6 +26,7 @@ const data = [
       "GraphQL",
     ],
     img: ama,
+    link: "/projects/ama-selections",
   },
   {
     title: "Hatless Website Redesign",
@@ -32,6 +34,7 @@ const data = [
       "A collaborative project with the internal design team to redesign the Hatless website.",
     pills: ["Vue", "Nuxt", "Tailwind", "Strapi", "JavaScript"],
     img: hat,
+    link: "/projects/hatless-website",
   },
 ];
 

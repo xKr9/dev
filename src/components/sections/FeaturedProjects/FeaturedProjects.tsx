@@ -47,6 +47,7 @@ export default function FeaturedProjects() {
               key={project.title}
               img={project.img}
               title={project.title}
+              link={window.location.pathname + project.link}
               idx={idx}
               pills={project.pills}
               description={project.description}
