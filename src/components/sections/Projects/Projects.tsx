@@ -44,7 +44,7 @@ export default function Projects() {
       <div className="flex flex-col gap-y-10">
         <div className="flex flex-col gap-y-5">
           <h2 className="text-3xl lg:text-5xl">
-            <span className="text-primary mr-2">[3].</span>Other Projects.
+            <span className="text-app-primary mr-2">[3].</span>Other Projects.
           </h2>
           <motion.div
             style={{
@@ -53,7 +53,7 @@ export default function Projects() {
               transition: "all 1.5s",
             }}
             ref={ref}
-            className="h-1 bg-primary"
+            className="h-1 bg-app-primary"
           ></motion.div>
         </div>
 

@@ -13,7 +13,7 @@ function App() {
           <h1 className="text-5xl flex flex-col h-screen gap-y-5 items-center justify-center">
             Why do you have to ruin the site :(
             <button>
-              <a href="/dev/" className="text-primary font-bold">
+              <a href="/dev/" className="text-app-primary font-bold">
                 Go back
               </a>
             </button>

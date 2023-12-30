@@ -30,7 +30,7 @@ export default function Experience() {
     >
       <div className="flex">
         <h2 className="text-3xl lg:text-5xl">
-          <span className="text-primary mr-2">[1].</span>Where I've worked.
+          <span className="text-app-primary mr-2">[1].</span>Where I've worked.
         </h2>
       </div>
       <motion.div
@@ -40,9 +40,9 @@ export default function Experience() {
           transition: "all 1.5s",
         }}
         ref={ref}
-        className="h-1 bg-primary"
+        className="h-1 bg-app-primary"
       ></motion.div>
-      <p className="text-accent">
+      <p className="text-app-accent">
         My journey in the world of technology and web development has been an
         exciting and fulfilling one. Here are some cool places I've worked at.
       </p>

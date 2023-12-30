@@ -10,7 +10,7 @@ import MainLayout from "../components/layouts/MainLayout";
 export default function Main() {
   return (
     <MainLayout>
-      <section className="max-w-5xl mx-auto flex flex-col gap-y-32 px-4 lg:px-12">
+      <section className="max-w-5xl mx-auto  flex flex-col gap-y-32 px-4 lg:px-12">
         <Landing />
         <About />
         <Experience />

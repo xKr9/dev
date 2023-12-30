@@ -22,8 +22,8 @@ export default function TileSelector({
             <p
               className={`pt-4 sm:pt-0 sm:pl-4 ${
                 selected === tile.id
-                  ? "text-primary font-semibold"
-                  : "text-accent"
+                  ? "text-app-primary font-semibold"
+                  : "text-app-accent"
               }`}
             >
               {tile.company}

@@ -1,6 +1,6 @@
 import AmaSelections from "./AmaSelections";
 import HatlessWebsite from "./HatlessWebsite";
-import PrimaryLanguages from "./PrimaryLanguages";
+import PrimaryLanguages from "./PrimaryLanguages/PrimaryLanguages";
 
 const data: {
   name: string;

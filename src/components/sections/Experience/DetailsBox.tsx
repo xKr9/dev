@@ -14,7 +14,7 @@ export default function DetailsBox({
     <div className="flex flex-col">
       <p className="text-2xl ">
         {detail.role}{" "}
-        <span className="text-primary font-bold text-lg">
+        <span className="text-app-primary font-bold text-lg">
           @{detail.company}
         </span>
       </p>

@@ -7,11 +7,11 @@ type Props = {
 
 export default function ProjectLayout({ children }: Props) {
   return (
-    <main className="bg-[#0a192f] relative min-h-screen py-20 font-primary w-full font-default text-white">
-      <section className="max-w-5xl mx-auto flex flex-col gap-y-32 px-4 ">
+    <main className="bg-[#0a192f] relative min-h-screen py-20 font-primary w-full font-default  text-app-accent">
+      <section className="max-w-5xl mx-auto flex flex-col gap-y-32 px-8 ">
         <Link
           to="/dev"
-          className="absolute flex items-center gap-1 top-5 text-xl lg:text-3xl left-5"
+          className="absolute flex items-center gap-1 top-5 text-xl lg:text-3xl left-5 text-white"
         >
           <Icon icon="charm:chevron-left" />
           Back

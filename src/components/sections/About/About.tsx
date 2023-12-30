@@ -25,7 +25,7 @@ export default function About() {
       className="flex flex-col gap-y-5"
     >
       <h2 className="text-3xl lg:text-5xl">
-        <span className="text-primary mr-2">[0].</span>About Me.
+        <span className="text-app-primary mr-2">[0].</span>About Me.
       </h2>
       <motion.div
         style={{
@@ -34,10 +34,10 @@ export default function About() {
           transition: "all 1.5s",
         }}
         ref={ref}
-        className="h-1 bg-primary"
+        className="h-1 bg-app-primary"
       ></motion.div>
 
-      <div className="text-accent flex flex-col gap-y-5">
+      <div className="text-app-accent flex flex-col gap-y-5">
         <p>
           My journey in the world of technology and web development has been an
           exciting and fulfilling one. It all began when I attended University
@@ -49,7 +49,7 @@ export default function About() {
           <a
             href="https://www.linkedin.com/company/hatless-studios/"
             target="_blank"
-            className="text-primary px-1"
+            className="text-app-primary px-1"
           >
             Hatless Studios
           </a>
@@ -65,7 +65,7 @@ export default function About() {
           <a
             href="https://www.linkedin.com/company/coreblue/"
             target="_blank"
-            className="text-primary pl-1"
+            className="text-app-primary pl-1"
           >
             Coreblue
           </a>

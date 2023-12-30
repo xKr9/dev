@@ -28,7 +28,7 @@ export default function FeaturedProjects() {
     >
       <div className="flex flex-col gap-y-5">
         <h2 className="text-3xl lg:text-5xl">
-          <span className="text-primary mr-2">[2].</span>Featured Projects.
+          <span className="text-app-primary mr-2">[2].</span>Featured Projects.
         </h2>
         <motion.div
           style={{
@@ -37,7 +37,7 @@ export default function FeaturedProjects() {
             transition: "all 1.5s",
           }}
           ref={ref}
-          className="h-1 bg-primary"
+          className="h-1 bg-app-primary"
         ></motion.div>
       </div>
       <div className="flex flex-col gap-y-5">
@@ -47,7 +47,7 @@ export default function FeaturedProjects() {
               key={project.title}
               img={project.img}
               title={project.title}
-              link={window.location.pathname + project.link}
+              link={`${window.location.pathname}/${project.link}`}
               idx={idx}
               pills={project.pills}
               description={project.description}

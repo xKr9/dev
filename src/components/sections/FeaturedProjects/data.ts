@@ -9,7 +9,7 @@ const data = [
       "A language learning application for children to practice their language listening, reading and writing skills via fun-to-play games, with a space theme.",
     img: pln,
     pills: ["Vue", "Django", "MySQL", "Tailwind", "JavaScript"],
-    link: "/projects/primary-languages-network",
+    link: "projects/primary-languages-network",
   },
   {
     title: "A.M.A Selections",

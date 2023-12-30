@@ -25,7 +25,7 @@ export default function Contact() {
     >
       <div className="flex">
         <h2 className="text-3xl lg:text-5xl">
-          <span className="text-primary mr-2">[4].</span>Get in touch
+          <span className="text-app-primary mr-2">[4].</span>Get in touch
         </h2>
       </div>
       <motion.div
@@ -35,17 +35,17 @@ export default function Contact() {
           transition: "all 1.5s",
         }}
         ref={ref}
-        className="h-1 bg-primary"
+        className="h-1 bg-app-primary"
       ></motion.div>
       <div className="flex py-16 lg:py-32 flex-col items-center justify-center text-center gap-y-8">
         <h1 className="font-bold text-3xl sm:text-6xl">Want to chat?</h1>
-        <p className="flex flex-col text-accent max-w-[500px]">
+        <p className="flex flex-col text-app-accent max-w-[500px]">
           Want to reach out? Whether you've got a burning question, a brilliant
           idea, or just want to say hi, I'm all ears!
         </p>
         <a
           href="mailto:dominikgrad47@gmail.com"
-          className="border-primary border px-10 hover:bg-primary hover:bg-opacity-80 py-3 rounded-xl transition-all"
+          className="border-app-primary border px-10 hover:bg-app-primary hover:bg-opacity-80 py-3 rounded-xl transition-all"
         >
           Get in touch :)
         </a>

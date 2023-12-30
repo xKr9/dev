@@ -14,7 +14,7 @@ export default function MobileNavbar() {
         }}
         className="absolute right-0 top-0 bg-yellow-300"
       >
-        <div className="flex flex-col gap-y-5 p-8 bg-primary">
+        <div className="flex flex-col gap-y-5 p-8 bg-app-primary">
           <motion.a
             initial={{ opacity: 0, translateY: "-20px" }}
             animate={{ opacity: 1, translateY: "0" }}
