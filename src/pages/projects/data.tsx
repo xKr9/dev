@@ -1,6 +1,8 @@
-import AmaSelections from "./AmaSelections";
-import HatlessWebsite from "./HatlessWebsite";
+import AmaSelections from "./AmaSelections/AmaSelections";
+import HatlessWebsite from "./HatlessWebsite/HatlessWebsite";
 import PrimaryLanguages from "./PrimaryLanguages/PrimaryLanguages";
+import StudentArtPlatform from "./StudentArtPlatform/StudentArtPlatform";
+import Ultraleap from "./Ultraleap/Ultraleap";
 
 const data: {
   name: string;
@@ -17,6 +19,14 @@ const data: {
   {
     name: "hatless-website",
     component: <HatlessWebsite />,
+  },
+  {
+    name: "ultraleap",
+    component: <Ultraleap />,
+  },
+  {
+    name: "student-art-platform",
+    component: <StudentArtPlatform />,
   },
 ];
 

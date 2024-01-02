@@ -53,7 +53,7 @@ export default function Landing() {
         className="mt-2 text-app-accent max-w-[500px] md:max-w-[650px]"
       >
         Welcome! I'm a Software Engineer that likes to build cool shit that
-        makes a difference to people. Currently the Co-Head of Tech{" "}
+        makes a difference to people. Currently the Head of Tech{" "}
         <span className="text-app-primary font-semibold">
           @HatlessStudios 🎩
         </span>

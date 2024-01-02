@@ -1,7 +1,6 @@
-import PLN_IMG from "@/assets/imgs/PLN_IMG.png";
+import HATLESS_IMG from "@/assets/imgs/HATLESS_IMG.png";
 import ProjectLayout from "../../../components/layouts/ProjectLayout";
 import { motion } from "framer-motion";
-import images from "./preview/";
 import SkillPills from "@/components/pills/SkillPills";
 import { tech, contributions } from "./data";
 import {
@@ -11,8 +10,8 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-export default function PrimaryLanguages() {
-  const title = "Primary Languages Network".split("");
+export default function HatlessWebsite() {
+  const title = "Hatless Website".split("");
 
   return (
     <ProjectLayout>
@@ -39,7 +38,7 @@ export default function PrimaryLanguages() {
           })}
         </h1>
         <img
-          src={PLN_IMG}
+          src={HATLESS_IMG}
           className="w-full absolute object-cover opacity-50 rounded-md top-0 right-0 h-full"
           alt=""
         />
@@ -51,17 +50,17 @@ export default function PrimaryLanguages() {
             Overview
           </h2>
           <p>
-            The Primary Languages Network (PLN) has embarked on an innovative
-            endeavor with the creation of the Planet Languages web app—a dynamic
-            language learning application tailored for children. This engaging
-            platform is meticulously designed to enhance language proficiency
-            through a combination of entertaining games that focus on listening,
-            reading, and writing skills. Set against a captivating space theme,
-            the app transforms language practice into a playful and enjoyable
-            experience for young learners. The Planet Languages web app not only
-            serves as an educational tool but also strives to instill a love for
-            language learning in children by making the process both educational
-            and fun.
+            I spearheaded the modernization of our internal public-facing
+            company website through close collaboration with UI/UX designers. By
+            leveraging cutting-edge design principles and technology, we
+            transformed the website into a sleek and intuitive platform that
+            aligns seamlessly with contemporary standards. Through a
+            user-centric approach, we enhanced the overall navigation,
+            responsiveness, and visual appeal, ensuring a cohesive and engaging
+            experience for both internal stakeholders and the public. Our
+            collaborative efforts resulted in an aesthetically pleasing and
+            functionally efficient website that reflects the company's
+            commitment to innovation and a modern
           </p>
         </section>
 
@@ -90,7 +89,7 @@ export default function PrimaryLanguages() {
           </Accordion>
         </section>
 
-        <section className="flex flex-col gap-2">
+        {/* <section className="flex flex-col gap-2">
           <h2 className="text-3xl text-white font-semibold flex flex-col gap-3">
             Preview
           </h2>
@@ -103,7 +102,7 @@ export default function PrimaryLanguages() {
               />
             ))}
           </div>
-        </section>
+        </section> */}
       </div>
     </ProjectLayout>
   );

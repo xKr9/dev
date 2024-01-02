@@ -12,7 +12,7 @@ export default function Navbar() {
           initial={{ opacity: 0, translateY: "-20px" }}
           animate={{ opacity: 1, translateY: "0" }}
           transition={{ duration: 0.5, delay: 0.4 }}
-          href="#about"
+          href="/#about"
           className="hover:text-app-primary"
         >
           <span className="text-app-primary">[0].</span> About
@@ -31,7 +31,7 @@ export default function Navbar() {
           initial={{ opacity: 0, translateY: "-20px" }}
           animate={{ opacity: 1, translateY: "0" }}
           transition={{ duration: 0.5, delay: 0.6 }}
-          href="#work"
+          href="/#work"
           className="hover:text-app-primary"
         >
           <span className="text-app-primary">[2].</span>Work
@@ -40,7 +40,7 @@ export default function Navbar() {
           initial={{ opacity: 0, translateY: "-20px" }}
           animate={{ opacity: 1, translateY: "0" }}
           transition={{ duration: 0.5, delay: 0.7 }}
-          href="#contact"
+          href="/#contact"
           className="hover:text-app-primary "
         >
           <span className="text-app-primary">[3].</span>Contact

@@ -1,7 +1,6 @@
-import PLN_IMG from "@/assets/imgs/PLN_IMG.png";
+import ULTRALEAP_IMG from "@/assets/imgs/ULTRALEAP_IMG.jpg";
 import ProjectLayout from "../../../components/layouts/ProjectLayout";
 import { motion } from "framer-motion";
-import images from "./preview/";
 import SkillPills from "@/components/pills/SkillPills";
 import { tech, contributions } from "./data";
 import {
@@ -11,13 +10,13 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-export default function PrimaryLanguages() {
-  const title = "Primary Languages Network".split("");
+export default function Ultraleap() {
+  const title = "Ultraleap".split("");
 
   return (
     <ProjectLayout>
-      <div className="relative p-4">
-        <h1 className="font-bold text-6xl sm:text-8xl md:text-9xl !z-10 px-0">
+      <div className="relative p-4 min-h-[300px]">
+        <h1 className="font-bold flex items-center h-full text-6xl sm:text-8xl md:text-9xl !z-10 px-0">
           {title.map((l, idx) => {
             return (
               <motion.span
@@ -39,9 +38,9 @@ export default function PrimaryLanguages() {
           })}
         </h1>
         <img
-          src={PLN_IMG}
+          src={ULTRALEAP_IMG}
           className="w-full absolute object-cover opacity-50 rounded-md top-0 right-0 h-full"
-          alt=""
+          alt="ama-selections"
         />
       </div>
 
@@ -51,17 +50,18 @@ export default function PrimaryLanguages() {
             Overview
           </h2>
           <p>
-            The Primary Languages Network (PLN) has embarked on an innovative
-            endeavor with the creation of the Planet Languages web app—a dynamic
-            language learning application tailored for children. This engaging
-            platform is meticulously designed to enhance language proficiency
-            through a combination of entertaining games that focus on listening,
-            reading, and writing skills. Set against a captivating space theme,
-            the app transforms language practice into a playful and enjoyable
-            experience for young learners. The Planet Languages web app not only
-            serves as an educational tool but also strives to instill a love for
-            language learning in children by making the process both educational
-            and fun.
+            Led the development using Ultraleaps touchfree technology. This
+            technology, presented in the form of a flat screen 'kiosk,'
+            resembles a touch screen but does not require physical contact.
+            Instead, a camera tracks users' hand movements, enabling them to
+            click and swipe gestures in mid-air. The initiative allows staff,
+            students, and the public to experience and explore the TouchFree
+            technology. Users are encouraged to participate in a
+            thought-provoking survey provided by the University Sustainability
+            Team while interacting with the novel technology. This collaboration
+            not only offers an engaging experience for the participants but also
+            provides Ultraleap with valuable insights into user interactions and
+            behaviors with their technology.
           </p>
         </section>
 
@@ -90,19 +90,17 @@ export default function PrimaryLanguages() {
           </Accordion>
         </section>
 
-        <section className="flex flex-col gap-2">
+        <section className="flex flex-col gap-5">
           <h2 className="text-3xl text-white font-semibold flex flex-col gap-3">
             Preview
           </h2>
-          <div className="grid lg:grid-cols-3 gap-5">
-            {images.map((image) => (
-              <img
-                src={image}
-                alt=""
-                className="w-full h-full object-cover hover:scale-105 transition-all cursor-pointer"
-              />
-            ))}
-          </div>
+          <a
+            className="text-white text-xl lg:text-4xl font-bold px-8 py-4 border text-center"
+            target="_blank"
+            href="https://www.linkedin.com/feed/update/urn:li:activity:7066773456888983552/"
+          >
+            Visit announcement
+          </a>
         </section>
       </div>
     </ProjectLayout>

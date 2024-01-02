@@ -1,7 +1,6 @@
-import PLN_IMG from "@/assets/imgs/PLN_IMG.png";
+import AMA_IMG from "@/assets/imgs/AMA_IMG.png";
 import ProjectLayout from "../../../components/layouts/ProjectLayout";
 import { motion } from "framer-motion";
-import images from "./preview/";
 import SkillPills from "@/components/pills/SkillPills";
 import { tech, contributions } from "./data";
 import {
@@ -11,8 +10,8 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-export default function PrimaryLanguages() {
-  const title = "Primary Languages Network".split("");
+export default function AmaSelections() {
+  const title = "AMA Selections".split("");
 
   return (
     <ProjectLayout>
@@ -39,9 +38,9 @@ export default function PrimaryLanguages() {
           })}
         </h1>
         <img
-          src={PLN_IMG}
+          src={AMA_IMG}
           className="w-full absolute object-cover opacity-50 rounded-md top-0 right-0 h-full"
-          alt=""
+          alt="ama-selections"
         />
       </div>
 
@@ -51,17 +50,12 @@ export default function PrimaryLanguages() {
             Overview
           </h2>
           <p>
-            The Primary Languages Network (PLN) has embarked on an innovative
-            endeavor with the creation of the Planet Languages web app—a dynamic
-            language learning application tailored for children. This engaging
-            platform is meticulously designed to enhance language proficiency
-            through a combination of entertaining games that focus on listening,
-            reading, and writing skills. Set against a captivating space theme,
-            the app transforms language practice into a playful and enjoyable
-            experience for young learners. The Planet Languages web app not only
-            serves as an educational tool but also strives to instill a love for
-            language learning in children by making the process both educational
-            and fun.
+            A.M.A Selections is a leading luxury holiday villa rental platform
+            specializing in curated experiences across France, Italy, and Spain.
+            The platform offers an exclusive collection of the top 1% verified
+            homes in Europe's most sought-after destinations. With a focus on
+            personalization and high-tech solutions, it provides a seamless
+            booking experience for discerning travelers.
           </p>
         </section>
 
@@ -90,19 +84,17 @@ export default function PrimaryLanguages() {
           </Accordion>
         </section>
 
-        <section className="flex flex-col gap-2">
+        <section className="flex flex-col gap-5">
           <h2 className="text-3xl text-white font-semibold flex flex-col gap-3">
             Preview
           </h2>
-          <div className="grid lg:grid-cols-3 gap-5">
-            {images.map((image) => (
-              <img
-                src={image}
-                alt=""
-                className="w-full h-full object-cover hover:scale-105 transition-all cursor-pointer"
-              />
-            ))}
-          </div>
+          <a
+            className="text-white text-xl lg:text-4xl font-bold px-8 py-4 border text-center"
+            target="_blank"
+            href="https://amaselections.com/"
+          >
+            Visit website
+          </a>
         </section>
       </div>
     </ProjectLayout>

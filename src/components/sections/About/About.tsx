@@ -76,11 +76,10 @@ export default function About() {
         </p>
         <p>
           With newfound knowledge and an insatiable desire to contribute more, I
-          returned to Hatless Studios as the Co-Head of Tech, focusing on
-          frontend development. In this role, I've incorporated my invaluable
-          experiences and insights into the company's endeavors, making it an
-          even more awesome and forward-thinking hub for technological
-          innovation.
+          returned to Hatless Studios as the Head of Tech, focusing on frontend
+          development. In this role, I've incorporated my invaluable experiences
+          and insights into the company's endeavors, making it an even more
+          awesome and forward-thinking hub for technological innovation.
         </p>
         <p>
           As I continue to evolve in my web development journey, I remain

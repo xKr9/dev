@@ -26,7 +26,7 @@ const data = [
       "GraphQL",
     ],
     img: ama,
-    link: "/projects/ama-selections",
+    link: "projects/ama-selections",
   },
   {
     title: "Hatless Website Redesign",
@@ -34,7 +34,7 @@ const data = [
       "A collaborative project with the internal design team to redesign the Hatless website.",
     pills: ["Vue", "Nuxt", "Tailwind", "Strapi", "JavaScript"],
     img: hat,
-    link: "/projects/hatless-website",
+    link: "projects/hatless-website",
   },
 ];
 
