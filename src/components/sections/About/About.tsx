@@ -22,8 +22,37 @@ export default function About() {
         amount: 0.7,
         once: true,
       }}
-      className="flex flex-col gap-y-5"
+      className="flex flex-col gap-y-5 isolate relative pb-40"
     >
+      <svg
+        aria-hidden="true"
+        className="absolute inset-0 -z-10 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+      >
+        <defs>
+          <pattern
+            x="50%"
+            y={0}
+            id="1d4240dd-898f-445f-932d-e2872fd12de3"
+            width={200}
+            height={200}
+            patternUnits="userSpaceOnUse"
+          >
+            <path d="M.5 200V.5H200" fill="none" />
+          </pattern>
+        </defs>
+        <svg x="50%" y={0} className="overflow-visible fill-gray-800/20">
+          <path
+            d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z"
+            strokeWidth={0}
+          />
+        </svg>
+        <rect
+          fill="url(#1d4240dd-898f-445f-932d-e2872fd12de3)"
+          width="100%"
+          height="100%"
+          strokeWidth={0}
+        />
+      </svg>
       <h2 className="text-3xl lg:text-5xl">
         <span className="text-app-primary mr-2">[0].</span>About Me.
       </h2>
@@ -39,52 +68,18 @@ export default function About() {
 
       <div className="text-app-accent flex flex-col gap-y-5">
         <p>
-          My journey in the world of technology and web development has been an
-          exciting and fulfilling one. It all began when I attended University
-          of Exeter, where I laid the foundation for my passion for coding and
-          creating innovative web solutions.
+          Hey there! I'm a Software Engineer who graduated from the University
+          of Exeter, juggling a full-time software engineering role throughout
+          my studies. Now, I'm a digital nomad, coding my way around the world,
+          making connections, and constantly learning. When I'm not diving into
+          code, you might catch me training calisthenics or trying out new
+          recipes!
         </p>
         <p>
-          During my first year at university, I had the opportunity to join
-          <a
-            href="https://www.linkedin.com/company/hatless-studios/"
-            target="_blank"
-            className="text-app-primary px-1"
-          >
-            Hatless Studios
-          </a>
-          , a student led company that allowed me to build applications for
-          clients from all corners of the globe. This experience not only honed
-          my technical skills but also ignited my fascination for crafting web
-          apps that truly make a difference and have a positive impact on
-          people's lives.
-        </p>
-        <p>
-          Taking a step further in my career, I embarked on an industrial
-          placement at{" "}
-          <a
-            href="https://www.linkedin.com/company/coreblue/"
-            target="_blank"
-            className="text-app-primary pl-1"
-          >
-            Coreblue
-          </a>
-          , where I had the privilege of working alongside immensely talented
-          individuals. The exposure to diverse projects and practices during my
-          time at Coreblue broadened my perspective and enriched my expertise in
-          the field.
-        </p>
-        <p>
-          With newfound knowledge and an insatiable desire to contribute more, I
-          returned to Hatless Studios as the Head of Tech, focusing on frontend
-          development. In this role, I've incorporated my invaluable experiences
-          and insights into the company's endeavors, making it an even more
-          awesome and forward-thinking hub for technological innovation.
-        </p>
-        <p>
-          As I continue to evolve in my web development journey, I remain
-          committed to creating impactful web experiences and pushing the
-          boundaries of what's possible in the ever-evolving digital landscape.
+          I’m passionate about freelancing, building dynamic websites and web
+          apps, and always on the lookout for new opportunities. If you’d like
+          to chat—whether about tech or your latest passion—let’s grab a coffee!
+          ☕️
         </p>
       </div>
     </motion.section>

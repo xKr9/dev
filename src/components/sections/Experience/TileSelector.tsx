@@ -8,7 +8,7 @@ export default function TileSelector({
   onSelect: (id: number) => void;
 }) {
   return (
-    <div className="flex sm:flex-col sm:w-[300px] sm:overflow-hidden flex-row overflow-x-auto gap-x-10  gap-y-5">
+    <div className="flex sm:flex-col sm:w-[500px] sm:overflow-hidden flex-row overflow-x-auto gap-x-10  gap-y-5">
       {data.map((tile) => {
         return (
           <div
@@ -26,7 +26,10 @@ export default function TileSelector({
                   : "text-app-accent"
               }`}
             >
-              {tile.company}
+              <p>{tile.company} </p>
+              <p>
+                {tile.from} - {tile.to}
+              </p>
             </p>
           </div>
         );

@@ -24,7 +24,7 @@ module.exports = {
         app: {
           primary: "#d90368",
           secondary: "#b0cdf1",
-          accent: "#c4c3d0",
+          accent: "#e5e7eb",
         },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
