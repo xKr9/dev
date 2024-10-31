@@ -43,7 +43,8 @@ export default function Projects() {
       <div className="flex flex-col gap-y-10">
         <div className="flex flex-col gap-y-5">
           <h2 className="text-3xl lg:text-5xl">
-            <span className="text-app-primary mr-2">[1].</span>Other Projects.
+            <span className="text-app-primary mr-2">[1].</span>Projects I've
+            worked on.
           </h2>
           <motion.div
             style={{
