@@ -59,7 +59,7 @@ export default function Landing() {
         }}
         className="text-6xl text-white lg:text-8xl font-bold"
       >
-        Dominik Grad.
+        Dom Grad.
       </motion.h1>
       <motion.h2
         initial={{
