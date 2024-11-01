@@ -43,6 +43,7 @@ export default function Projects() {
   const inView = useInView(ref, { once: true });
   return (
     <motion.section
+      id="projects"
       initial={{
         opacity: 0,
         translateY: "-20px",
@@ -80,7 +81,11 @@ export default function Projects() {
         {selected ? (
           <div className="text-white w-full">
             <button
-              onClick={() => setSelected(null)}
+              onClick={() => {
+                setSelected(null);
+                const section = document.querySelector("#projects");
+                section?.scrollIntoView({ behavior: "smooth" });
+              }}
               className="mb-5 px-8 py-2 border border-app-primary rounded-xl"
             >
               Show all projects
@@ -129,7 +134,11 @@ export default function Projects() {
                   <ProjectItem
                     title={project.title}
                     img={project.img}
-                    onSelect={(e) => setSelected(e)}
+                    onSelect={(e) => {
+                      setSelected(e);
+                      const section = document.querySelector("#projects");
+                      section?.scrollIntoView({ behavior: "smooth" });
+                    }}
                   />
                 </motion.div>
               );
