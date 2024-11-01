@@ -1,10 +1,26 @@
 import data from "./data";
 import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
-const ProjectItem = ({ title, img }: { title: string; img: string }) => {
+const ProjectItem = ({
+  title,
+  img,
+  onSelect,
+}: {
+  title: string;
+  img: string;
+  onSelect: ({ title, img }: { title: string; img: string }) => void;
+}) => {
   return (
-    <div className="bg-white relative group aspect-square cursor-pointer">
+    <div
+      onClick={() =>
+        onSelect({
+          title,
+          img,
+        })
+      }
+      className="bg-white relative group aspect-square cursor-pointer"
+    >
       <img
         src={img}
         alt=""
@@ -19,6 +35,10 @@ const ProjectItem = ({ title, img }: { title: string; img: string }) => {
 };
 
 export default function Projects() {
+  const [selected, setSelected] = useState<{
+    title: string;
+    img: string;
+  } | null>(null);
   const ref = useRef(null);
   const inView = useInView(ref, { once: true });
   return (
@@ -38,7 +58,7 @@ export default function Projects() {
         amount: 0.2,
         once: true,
       }}
-      className="flex flex-col gap-y-5"
+      className="flex flex-col gap-y-5 min-h-screen"
     >
       <div className="flex flex-col gap-y-10">
         <div className="flex flex-col gap-y-5">
@@ -57,11 +77,65 @@ export default function Projects() {
           ></motion.div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:grid-cols-3">
-          {data.map((project) => {
-            return <ProjectItem title={project.title} img={project.img} />;
-          })}
-        </div>
+        {selected ? (
+          <div className="text-white w-full">
+            <button
+              onClick={() => setSelected(null)}
+              className="mb-5 px-8 py-2 border border-app-primary rounded-xl"
+            >
+              Show all projects
+            </button>
+            <div className="w-full relative flex justify-center items-center">
+              <div className="bg-black inset-0 absolute opacity-20 z-10"></div>
+              <motion.h2 className="z-10 flex gap-5 text-6xl absolute">
+                {selected.title.split(" ").map((word, idx) => (
+                  <motion.span
+                    key={idx}
+                    transition={{ delay: idx * 0.5 }}
+                    className="block font-bold"
+                  >
+                    {word.split("").map((letter, idx) => (
+                      <motion.span
+                        key={idx}
+                        initial={{ opacity: 0, translateY: "20px" }}
+                        animate={{ opacity: 1, translateY: "0" }}
+                        transition={{ delay: idx * 0.05 }}
+                      >
+                        {letter}
+                      </motion.span>
+                    ))}
+                  </motion.span>
+                ))}
+              </motion.h2>
+              <motion.img
+                initial={{ opacity: 0, translateY: "20px" }}
+                animate={{ opacity: 1, translateY: "0" }}
+                transition={{ duration: 0.5 }}
+                src={selected.img}
+                className="h-48 w-full object-cover"
+                alt={`${selected.title}-img`}
+              />
+            </div>
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:grid-cols-3">
+            {data.map((project, idx) => {
+              return (
+                <motion.div
+                  initial={{ opacity: 0, translateY: "20px" }}
+                  animate={{ opacity: 1, translateY: "0" }}
+                  transition={{ delay: idx * 0.2, duration: 0.25 }}
+                >
+                  <ProjectItem
+                    title={project.title}
+                    img={project.img}
+                    onSelect={(e) => setSelected(e)}
+                  />
+                </motion.div>
+              );
+            })}
+          </div>
+        )}
       </div>
     </motion.section>
   );
