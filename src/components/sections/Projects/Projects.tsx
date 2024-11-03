@@ -90,37 +90,7 @@ export default function Projects() {
             >
               Show all projects
             </button>
-            <div className="w-full relative flex justify-center items-center">
-              <div className="bg-black inset-0 absolute opacity-20 z-10"></div>
-              <motion.h2 className="z-10 flex gap-5 text-6xl absolute">
-                {selected.title.split(" ").map((word, idx) => (
-                  <motion.span
-                    key={idx}
-                    transition={{ delay: idx * 0.5 }}
-                    className="block font-bold"
-                  >
-                    {word.split("").map((letter, idx) => (
-                      <motion.span
-                        key={idx}
-                        initial={{ opacity: 0, translateY: "20px" }}
-                        animate={{ opacity: 1, translateY: "0" }}
-                        transition={{ delay: idx * 0.05 }}
-                      >
-                        {letter}
-                      </motion.span>
-                    ))}
-                  </motion.span>
-                ))}
-              </motion.h2>
-              <motion.img
-                initial={{ opacity: 0, translateY: "20px" }}
-                animate={{ opacity: 1, translateY: "0" }}
-                transition={{ duration: 0.5 }}
-                src={selected.img}
-                className="h-48 w-full object-cover"
-                alt={`${selected.title}-img`}
-              />
-            </div>
+            <ProjectPreview title={selected.title} img={selected.img} />
           </div>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:grid-cols-3">
@@ -149,3 +119,117 @@ export default function Projects() {
     </motion.section>
   );
 }
+
+const ProjectPreview = ({ title, img }: { title: string; img: string }) => {
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true });
+  const info = data.find((project) => project.title === title);
+  return (
+    <>
+      <div className="w-full relative flex justify-center items-center">
+        <div className="bg-black inset-0 absolute opacity-20 z-10"></div>
+        <motion.h2 className="z-10 hidden gap-5 lg:flex text-6xl absolute">
+          {title.split(" ").map((word, idx) => (
+            <motion.span
+              key={idx}
+              transition={{ delay: idx * 0.5 }}
+              className="block font-bold"
+            >
+              {word.split("").map((letter, idx) => (
+                <motion.span
+                  key={idx}
+                  initial={{ opacity: 0, translateY: "20px" }}
+                  animate={{ opacity: 1, translateY: "0" }}
+                  transition={{ delay: idx * 0.05 }}
+                >
+                  {letter}
+                </motion.span>
+              ))}
+            </motion.span>
+          ))}
+        </motion.h2>
+        <motion.img
+          initial={{ opacity: 0, translateY: "20px" }}
+          animate={{ opacity: 1, translateY: "0" }}
+          transition={{ duration: 0.5 }}
+          src={img}
+          className="h-48 w-full object-cover"
+          alt={`${title}-img`}
+        />
+      </div>
+      <section className="flex flex-col gap-3">
+        <motion.h2 className="z-10 lg:hidden gap-5 flex sm:text-5xl font-bold text-4xl pt-5 justify-center w-full">
+          {title}
+        </motion.h2>
+        <div className="flex lg:flex-row flex-col mt-5 gap-10">
+          <div className="flex flex-col w-full gap-3">
+            <div className="flex flex-col gap-1">
+              <h2 className="font-bold text-3xl">Quick overview</h2>
+              <motion.div
+                style={{
+                  width: inView ? "50%" : "0%",
+                  opacity: inView ? 1 : 0,
+                  transition: "all 1.5s",
+                }}
+                ref={ref}
+                className="h-1 bg-app-primary"
+              ></motion.div>
+            </div>
+
+            <p>{info?.description}</p>
+            <div className="flex flex-col gap-1">
+              <h2 className="font-bold text-3xl">Worked on features</h2>
+              <motion.div
+                style={{
+                  width: inView ? "50%" : "0%",
+                  opacity: inView ? 1 : 0,
+                  transition: "all 1.5s",
+                }}
+                ref={ref}
+                className="h-1 bg-app-primary"
+              ></motion.div>
+            </div>
+            <ul className="flex gap-2 flex-col">
+              {info?.features?.map((feature, idx) => {
+                return (
+                  <li key={idx} className="list-disc">
+                    {feature}
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+          <div className="flex w-1/2 flex-col gap-3">
+            <div className="flex flex-col gap-1">
+              <h2 className="font-bold text-3xl">Tech used</h2>
+              <motion.div
+                style={{
+                  width: inView ? "50%" : "0%",
+                  opacity: inView ? 1 : 0,
+                  transition: "all 1.5s",
+                }}
+                ref={ref}
+                className="h-1 bg-app-primary"
+              ></motion.div>
+            </div>
+            <div className="flex gap-3 flex-wrap">
+              {info?.pills.map((pill, idx) => {
+                return (
+                  <motion.span
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    transition={{ delay: idx * 0.15 + 0.5 }}
+                    key={idx}
+                    className="bg-app-primary text-white px-2 py-1 rounded-full"
+                  >
+                    {pill}
+                  </motion.span>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};
