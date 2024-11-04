@@ -36,6 +36,7 @@ const data = [
       "SES",
       "Google Calendar API",
       "Outlook Calendar API",
+      "Websockets",
     ],
     features: [
       "Developed a seamless room booking feature that lets users reserve multiple linked rooms, making it ideal for events needing adjacent spaces. Rooms can be connected in clusters (like A to B, and B to C), with an algorithm I designed to prevent gaps in linked bookings, ensuring a smooth experience for users. The feature also integrates smoothly with platforms like Google and Outlook, allowing users to sync their bookings across their preferred calendar services.",
@@ -132,13 +133,17 @@ const data = [
       "Platform for simplifying the home-buying process by conducting comprehensive checks on land registry, water company data, hazards, and more.",
     pills: ["React", "Tailwind", "Django", "React Query", "TypeScript"],
     img: matrix,
-    link: "/projects/case-management-platform",
   },
   {
     title: "Quidland",
     description:
       "Decentralised web application allowing service providers to offer their services and customers to book them by registering e-wallets.",
     img: quidland,
+    features: [
+      "Developed a secure e-wallet system that allows users to deposit, withdraw, and transfer funds.",
+      "Integrated MangoPay API to facilitate secure transactions between users and service providers.",
+      "Designed and implemented a user-friendly interface that simplifies the booking process, making it easy for customers to find and book services.",
+    ],
     pills: [
       "React",
       "JavaScript",
@@ -149,23 +154,24 @@ const data = [
       "MangoPay",
       "Decentralised Web",
     ],
-    link: "/projects/quidland",
   },
   {
     title: "Analytics Dashboard",
     description:
       "An internal dashboard for PostTag to manage their clients data usage.",
     img: posttag,
+    features: [],
     pills: ["React", "JavaScript", "Tailwind", "MaterialUI"],
-    link: "/projects/posttag-dashboard",
   },
   {
     title: "Student Art Platform",
     description:
       "Web platform for film students to share their work and connect with other students and industry professionals.",
+    features: [
+      "Developed a social media platform that allows students to share their work, connect with other students, and network with industry professionals.",
+    ],
     img: screendm,
     pills: ["React", "TypeScript", "Tailwind"],
-    link: "/projects/student-art-platform",
   },
   {
     title: "Carbon Footprint Calculator",
@@ -173,7 +179,6 @@ const data = [
       "Web application designed to calculate the carbon footprint for projects, on a small scale project-by-project basis",
     pills: ["React", "TypeScript", "Tailwind", "RadixUI"],
     img: kurb,
-    link: "/projects/kurb",
   },
   {
     title: "Global Tint",
@@ -181,7 +186,6 @@ const data = [
       "A web application for offering the sale of window tinting products and services.",
     pills: ["React", "JavaScript", "Laravel", "PHP", "CSS"],
     img: globaltint,
-    link: "/projects/global-tint",
   },
   {
     title: "gotLearning",
@@ -189,7 +193,6 @@ const data = [
       "Student-centered hub for seamless teacher-student communication about learning",
     pills: ["Vue", "JavaScript", "Django", "Python"],
     img: gotLearning,
-    link: "/projects/global-tint",
   },
   {
     title: "Ultraleap",
@@ -197,7 +200,6 @@ const data = [
       "Hand tracking and haptics powers intuitive, touchless gesture control in AR/VR,",
     pills: ["React", "Redux", "TypeScript", "AR"],
     img: ultraleap,
-    link: "/projects/ultraleap",
   },
   {
     title: "API usage platform",
@@ -205,7 +207,6 @@ const data = [
       "A web application for offering the sale of window tinting products and services.",
     pills: ["React", "JavaScript", "Material UI"],
     img: taxi,
-    link: "/projects/global-tint",
   },
   {
     title: "Student support platform",
@@ -220,7 +221,6 @@ const data = [
       "Python",
     ],
     img: beacon,
-    link: "/projects/beacon-pathway",
   },
 ];
 
