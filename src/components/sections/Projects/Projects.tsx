@@ -1,3 +1,4 @@
+import { Icon } from "@iconify/react/dist/iconify.js";
 import data from "./data";
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
@@ -120,13 +121,30 @@ export default function Projects() {
   );
 }
 
+type ProjectType =
+  | {
+      title: string;
+      description: string;
+      features: string[];
+      pills: string[];
+      link: string;
+    }
+  | undefined;
+
 const ProjectPreview = ({ title, img }: { title: string; img: string }) => {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true });
-  const info = data.find((project) => project.title === title);
+  const info = data.find((project) => project.title === title) as ProjectType;
   return (
     <>
       <div className="w-full relative flex justify-center items-center">
+        {info?.link && (
+          <Icon
+            icon="line-md:link"
+            className="top-2 right-2 text-3xl absolute cursor-pointer text-white z-30"
+          />
+        )}
+
         <div className="bg-black inset-0 absolute opacity-20 z-10"></div>
         <motion.h2 className="z-10 hidden gap-5 lg:flex text-6xl absolute">
           {title.split(" ").map((word, idx) => (

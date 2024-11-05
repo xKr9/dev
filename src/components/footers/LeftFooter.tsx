@@ -30,7 +30,7 @@ export default function LeftFooter() {
       >
         <Icon icon={"mdi:twitter"} />
       </a>
-      <div className="w-[0.5px] h-20 bg-white mx-auto"></div>
+      <div className="w-[1px] h-20 bg-white mx-auto"></div>
     </div>
   );
 }

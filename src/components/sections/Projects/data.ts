@@ -13,6 +13,7 @@ import ama from "../../../assets/imgs/AMA_IMG.png";
 import pln from "../../../assets/imgs/PLN_IMG.png";
 import hat from "../../../assets/imgs/HATLESS_IMG.png";
 import pragma from "../../../assets/imgs/PRAGMA_IMG.jpg";
+import markers from "../../../assets/imgs/POSTTAG_MARKERS.jpg";
 
 const data = [
   {
@@ -39,31 +40,32 @@ const data = [
       "Websockets",
     ],
     features: [
-      "Developed a seamless room booking feature that lets users reserve multiple linked rooms, making it ideal for events needing adjacent spaces. Rooms can be connected in clusters (like A to B, and B to C), with an algorithm I designed to prevent gaps in linked bookings, ensuring a smooth experience for users. The feature also integrates smoothly with platforms like Google and Outlook, allowing users to sync their bookings across their preferred calendar services.",
+      "Room booking feature that lets users reserve multiple linked rooms, making it ideal for events needing adjacent spaces. Rooms can be connected in clusters (like A to B, and B to C), with an algorithm I designed to prevent gaps in linked bookings, ensuring a smooth experience for users. The feature also integrates smoothly with platforms like Google and Outlook, allowing users to sync their bookings across their preferred calendar services.",
       "Worked on the support ticket system allowing users to report issues on the platform.",
     ],
     img: clearooms,
   },
   {
-    title: "Pragma Holis",
+    title: "Highway marker locator",
     description:
-      "A web application for businesses to generate an overview of their strengths and weaknesses.",
+      "A web application to pinpoint highway markers on a map to accurately locate them for maintenance.",
     features: [
-      "Integrated typeform API to allow users to fill out a questionnaire to generate a report.",
-      "Developed a comprehensive admin dashboard that offers full control over the user experience. Admins can view and manage user information, preview reports to ensure alignment with business goals, and perform bulk actions like adding users or exporting data.",
-      "Developed a report generation system that allows users to generate a report based on their questionnaire answers.",
+      "Integrated Google Maps API to display a map with highway markers, allowing users to pinpoint the exact location of each marker.",
+      "Developed a feature that enables users to add new markers to the map, making it easy to update the database with new information.",
+      "Review system that allows users to rate the accuracy of the marker locations, helping to maintain the database's quality.",
+      "UI to allow users to search for markers by name or location, making it easy to find specific highways to update.",
     ],
     pills: [
       "React",
       "TypeScript",
       "Tailwind",
-      "HTML2Canvas",
-      "JSPDF",
-      "API",
-      "Typeform",
+      "Google Maps API",
+      "HTML",
+      "CSS",
     ],
-    img: pragma,
+    img: markers,
   },
+
   {
     title: "Primary Languages Network",
     description:
@@ -72,7 +74,7 @@ const data = [
     features: [
       "Weekly languages games of writing, listening and reading",
       "Badge achievement system that motivates students to progress in specific categories, such as animals or food. As they master new content, they earn badges in bronze, silver, and gold levels in which they can be previewed in their profile.",
-      "Developed a comprehensive teacher dashboard that offers full control over the student experience. Teachers can set weekly games, manage student and class information, preview games to ensure alignment with learning goals, and perform bulk actions like adding students or exporting data.",
+      "Ccomprehensive teacher dashboard that offers full control over the student experience. Teachers can set weekly games, manage student and class information, preview games to ensure alignment with learning goals, and perform bulk actions like adding students or exporting data.",
     ],
     pills: [
       "Vue",
@@ -124,14 +126,45 @@ const data = [
     features: [
       "Improved SEO performance by over 12% acrossall metrics by leveraging Nuxt.js 3, leading to higher search engine rankings and increased organic traffic.",
       "Successfully boosted website traffic by 57%, elevating the company's online visibility and generating more project opportunities.",
+      "Collaborated with the design team to create a visually appealing and user-friendly website that aligns with the company's brand identity.",
     ],
     img: hat,
+  },
+  {
+    title: "Pragma Holis",
+    description:
+      "A web application for businesses to generate an overview of their strengths and weaknesses.",
+    features: [
+      "Integrated typeform API to allow users to fill out a questionnaire to generate a report.",
+      "Comprehensive admin dashboard that offers full control over the user experience. Admins can view and manage user information, preview reports to ensure alignment with business goals, and perform bulk actions like adding users or exporting data.",
+      "Report generation system that allows users to generate a report based on their questionnaire answers.",
+    ],
+    pills: [
+      "React",
+      "TypeScript",
+      "Tailwind",
+      "HTML2Canvas",
+      "JSPDF",
+      "API",
+      "Typeform",
+    ],
+    img: pragma,
   },
   {
     title: "Case Management Platform",
     description:
       "Platform for simplifying the home-buying process by conducting comprehensive checks on land registry, water company data, hazards, and more.",
-    pills: ["React", "Tailwind", "Django", "React Query", "TypeScript"],
+    features: ["Extensive assessment report that evaluates"],
+    pills: [
+      "React",
+      "Tailwind",
+      "Django",
+      "React Query",
+      "TypeScript",
+      "Django Rest Framework",
+      "HTML",
+      "CSS",
+    ],
     img: matrix,
   },
   {
@@ -140,9 +173,10 @@ const data = [
       "Decentralised web application allowing service providers to offer their services and customers to book them by registering e-wallets.",
     img: quidland,
     features: [
-      "Developed a secure e-wallet system that allows users to deposit, withdraw, and transfer funds.",
+      "Secure e-wallet system that allows users to deposit, withdraw, and transfer funds.",
       "Integrated MangoPay API to facilitate secure transactions between users and service providers.",
       "Designed and implemented a user-friendly interface that simplifies the booking process, making it easy for customers to find and book services.",
+      "Data visualization feature that provides service providers with insights into their earnings, bookings, and service popularity breakdown.",
     ],
     pills: [
       "React",
@@ -152,11 +186,12 @@ const data = [
       "PHP",
       "Laravel",
       "MangoPay",
+      "Web 3",
       "Decentralised Web",
     ],
   },
   {
-    title: "Analytics Dashboard",
+    title: "PostTag Dashboard",
     description:
       "An internal dashboard for PostTag to manage their clients data usage.",
     img: posttag,
@@ -168,10 +203,10 @@ const data = [
     description:
       "Web platform for film students to share their work and connect with other students and industry professionals.",
     features: [
-      "Developed a social media platform that allows students to share their work, connect with other students, and network with industry professionals.",
+      "Collaborated with desginers to develop a proof of concept for the platform, which was used to secure funding for the project.",
     ],
     img: screendm,
-    pills: ["React", "TypeScript", "Tailwind"],
+    pills: ["React", "TypeScript", "Tailwind", "Firebase", "HTML", "CSS"],
   },
   {
     title: "Carbon Footprint Calculator",
