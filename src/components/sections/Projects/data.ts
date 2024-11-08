@@ -93,8 +93,9 @@ const data = [
     description:
       "Luxurious holiday booking application offering a wide range of privately owned luxuary villas in Europe.",
     features: [
-      "Developed the booking process from the users ability to create a request for a booking, to the admin's ability to manage the request, to the user's ability to confirm the booking.",
-      "Developed the user dashboard where users can manage their bookings, view their invoices, and update their profile.",
+      "Booking process from the users ability to create a request for a booking, to the admin's ability to manage the request, to the user's ability to confirm the booking.",
+      "User dashboard where users can manage their bookings, view their invoices, and update their profile.",
+      "Mobile optimisation efforts to ensure a seamless user experience on all devices.",
     ],
     pills: [
       "React",
@@ -135,7 +136,7 @@ const data = [
     description:
       "A web application for businesses to generate an overview of their strengths and weaknesses.",
     features: [
-      "Integrated typeform API to allow users to fill out a questionnaire to generate a report.",
+      "Integrating the typeform API to allow users to fill out a questionnaire to generate a report.",
       "Comprehensive admin dashboard that offers full control over the user experience. Admins can view and manage user information, preview reports to ensure alignment with business goals, and perform bulk actions like adding users or exporting data.",
       "Report generation system that allows users to generate a report based on their questionnaire answers.",
     ],
@@ -145,7 +146,6 @@ const data = [
       "Tailwind",
       "HTML2Canvas",
       "JSPDF",
-      "API",
       "Typeform",
     ],
     img: pragma,
@@ -191,11 +191,37 @@ const data = [
     ],
   },
   {
-    title: "PostTag Dashboard",
+    title: "PostTag PAYG Dashboard",
     description:
-      "An internal dashboard for PostTag to manage their clients data usage.",
+      "An internal dashboard for PostTag clients to manage their data usage and spending.",
     img: posttag,
-    features: [],
+    features: [
+      "Integrated PAYG transactions to allow users to register and make payments on the platform.",
+      "Data visualisation feature that provides users with insights into their data usage, spending, and account balance.",
+      "Invoice generation based on PAYG transactions, allowing users to download and print their invoices.",
+      "Admin specific features to allow for referal management, user management and credit management.",
+    ],
+    pills: [
+      "React",
+      "JavaScript",
+      "Tailwind",
+      "MaterialUI",
+      "TypeScript",
+      "PAYG",
+      "3rd Party API",
+      "HTML",
+      "CSS",
+      "ReCharts",
+      "Data Visualisation",
+    ],
+  },
+  {
+    title: "PostTag Dashboard",
+    description: "An internal dashboard for PostTag to manage their clients.",
+    img: posttag,
+    features: [
+      "Dashbaord that provides data visualisation statistics on API usage, data usage, and more.",
+    ],
     pills: ["React", "JavaScript", "Tailwind", "MaterialUI"],
   },
   {
@@ -213,6 +239,10 @@ const data = [
     description:
       "Web application designed to calculate the carbon footprint for projects, on a small scale project-by-project basis",
     pills: ["React", "TypeScript", "Tailwind", "RadixUI"],
+    features: [
+      "Multi-step form that guides users through the process of calculating their carbon footprint.",
+      "Integrated dynamic selection that weighs different factors depending on the previous selections, ensuring accurate results.",
+    ],
     img: kurb,
   },
   {
@@ -225,15 +255,23 @@ const data = [
   {
     title: "gotLearning",
     description:
-      "Student-centered hub for seamless teacher-student communication about learning",
+      "Student-centered hub for seamless teacher-student communication about classwork and assignments.",
     pills: ["Vue", "JavaScript", "Django", "Python"],
+    features: [
+      "Integrated a calendar feature that allows teachers to schedule and share upcoming events, assignments, and exams with students.",
+      "Conversation feature helping students to communicate with teachers and other students about classwork, assignments, and more.",
+    ],
     img: gotLearning,
   },
   {
     title: "Ultraleap",
     description:
       "Hand tracking and haptics powers intuitive, touchless gesture control in AR/VR,",
-    pills: ["React", "Redux", "TypeScript", "AR"],
+    pills: ["React", "Redux", "TypeScript", "AR", "Ulraleap"],
+    features: [
+      "Integrated Ultraleap's hand tracking and haptics technology to enable touchless gesture control in AR/VR applications.",
+      "Developed a user-friendly survey with the touchless gesture control feature, allowing users to interact with the survey without touching the screen.",
+    ],
     img: ultraleap,
   },
   {
