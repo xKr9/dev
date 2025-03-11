@@ -24,7 +24,7 @@ const ProjectItem = ({
     >
       <img
         src={img}
-        alt=""
+        alt={title}
         className=" group-hover:blur-sm transition-all duration-200"
       />
       <h2 className="absolute group-hover:scale-100 transition-all duration-200 scale-0 z-10 top-1/2 left-1/2 text-center -translate-x-1/2 text-3xl -translate-y-1/2 font-bold">
@@ -41,25 +41,9 @@ export default function Projects() {
     img: string;
   } | null>(null);
   const ref = useRef(null);
-  const inView = useInView(ref, { once: true });
   return (
     <motion.section
       id="projects"
-      initial={{
-        opacity: 0,
-        translateY: "-20px",
-      }}
-      whileInView={{
-        opacity: 1,
-        translateY: "0",
-      }}
-      transition={{
-        duration: 0.5,
-      }}
-      viewport={{
-        amount: 0.2,
-        once: true,
-      }}
       className="flex flex-col gap-y-5 min-h-screen"
     >
       <div className="flex flex-col gap-y-10">
@@ -68,15 +52,7 @@ export default function Projects() {
             <span className="text-app-primary mr-2">[1].</span>Projects I've
             worked on.
           </h2>
-          <motion.div
-            style={{
-              width: inView ? "75%" : "0%",
-              opacity: inView ? 1 : 0,
-              transition: "all 1.5s",
-            }}
-            ref={ref}
-            className="h-1 bg-app-primary"
-          ></motion.div>
+          <motion.div ref={ref} className="h-1 bg-app-primary"></motion.div>
         </div>
 
         {selected ? (
