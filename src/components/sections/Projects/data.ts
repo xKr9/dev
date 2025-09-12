@@ -41,7 +41,9 @@ const data = [
     ],
     features: [
       "Room booking feature that lets users reserve multiple linked rooms, making it ideal for events needing adjacent spaces. Rooms can be connected in clusters (like A to B, and B to C), with an algorithm I designed to prevent gaps in linked bookings, ensuring a smooth experience for users. The feature also integrates smoothly with platforms like Google and Outlook, allowing users to sync their bookings across their preferred calendar services.",
-      "Worked on the support ticket system allowing users to report issues on the platform.",
+      "Optimised core platform functionality by identifying and resolving performance bottlenecks in critical database queries. Refactored frontend architecture to reduce error-prone logic, implementing cleaner component patterns and improving overall reliability and maintainability.",
+      "Developed a seamless in-platform support system enabling users to report issues directly. Engineered an email reply integration that allows users to respond to support threads from their inbox, with replies automatically synced and visible on the platform—enhancing user experience and support team efficiency.",
+      "Led the development of a customisable public booking widget for organisations, enabling external users to reserve desks and meeting rooms. The widget includes advanced features such as pre-booking flows similar to Ticketmaster, integrated payment handling, and dynamic layout options to suit various branding and use-case requirements.",
     ],
     img: clearooms,
   },
@@ -50,10 +52,10 @@ const data = [
     description:
       "A web application to pinpoint highway markers on a map to accurately locate them for maintenance.",
     features: [
-      "Integrated Google Maps API to display a map with highway markers, allowing users to pinpoint the exact location of each marker.",
-      "Developed a feature that enables users to add new markers to the map, making it easy to update the database with new information.",
-      "Review system that allows users to rate the accuracy of the marker locations, helping to maintain the database's quality.",
-      "UI to allow users to search for markers by name or location, making it easy to find specific highways to update.",
+      "Built a custom web application that visualizes highway intersection data using the Google Maps API. Users can view accurate, real-time map displays with existing marker data, allowing them to visually identify and verify the location of highway points.",
+      "Developed an intuitive feature that allows authenticated users to place new markers directly on the map, populating missing intersection data. Each new submission is linked to a live backend API, enabling immediate updates to the central database with minimal friction.",
+      "Introduced a user review and rating system for each marker, enabling crowdsourced validation of marker accuracy. This mechanism helps ensure data quality over time by promoting consensus on correct locations and flagging potentially incorrect submissions.",
+      "Developed a clean, user-friendly interface that supports searching for markers by name or geographic location. This feature streamlines the data enrichment process by helping users quickly locate and update specific intersections without needing to manually browse the map.",
     ],
     pills: [
       "React",
@@ -72,9 +74,9 @@ const data = [
       "A space-themed language learning platform that makes learning fun and interactive! Teachers are able to set weekly games and challenges for their students in which the students can practise their writing, listening and reading skills.",
     img: pln,
     features: [
-      "Weekly languages games of writing, listening and reading",
-      "Badge achievement system that motivates students to progress in specific categories, such as animals or food. As they master new content, they earn badges in bronze, silver, and gold levels in which they can be previewed in their profile.",
-      "Ccomprehensive teacher dashboard that offers full control over the student experience. Teachers can set weekly games, manage student and class information, preview games to ensure alignment with learning goals, and perform bulk actions like adding students or exporting data.",
+      "Built a suite of writing, listening, and reading-based games that teachers can assign on a weekly basis. These activities are designed to reinforce key vocabulary and grammar topics through engaging, game-like mechanics, helping students develop core language skills in a playful, structured environment.",
+      `Designed and implemented a badge-based reward system to incentivise continued learning. Students earn bronze, silver, and gold badges as they progress through themed content areas such as "Animals" or "Food." Badges are visually displayed on student profiles, encouraging friendly competition and ongoing motivation`,
+      "Created a comprehensive dashboard empowering teachers with full administrative control. Features include the ability to assign weekly games, manage individual students or entire classes, preview activities to ensure curriculum alignment, and perform time-saving bulk actions such as importing/exporting student data or resetting assignments.",
     ],
     pills: [
       "Vue",
@@ -93,9 +95,9 @@ const data = [
     description:
       "Luxurious holiday booking application offering a wide range of privately owned luxuary villas in Europe.",
     features: [
-      "Booking process from the users ability to create a request for a booking, to the admin's ability to manage the request, to the user's ability to confirm the booking.",
-      "User dashboard where users can manage their bookings, view their invoices, and update their profile.",
-      "Mobile optimisation efforts to ensure a seamless user experience on all devices.",
+      "Developed a multi-step booking system covering the full lifecycle—from a guest submitting a booking request, to admin review and approval, to final guest confirmation. This process includes dynamic availability checks, messaging integration, and status management, ensuring a clear and reliable experience for both users and staff.",
+      "Designed a user-friendly dashboard that enables guests to manage upcoming and past bookings, securely view and download invoices, and update personal details. This feature empowers users with full visibility into their travel plans and simplifies post-booking interactions.",
+      "Prioritised mobile responsiveness across the entire platform to deliver a smooth, high-end user experience on all devices. Implemented adaptive layouts, touch-friendly UI components, and performance optimisations to support on-the-go browsing and booking, especially for a luxury market accustomed to premium digital standards.",
     ],
     pills: [
       "React",
@@ -125,9 +127,9 @@ const data = [
       "Figma",
     ],
     features: [
-      "Improved SEO performance by over 12% acrossall metrics by leveraging Nuxt.js 3, leading to higher search engine rankings and increased organic traffic.",
-      "Successfully boosted website traffic by 57%, elevating the company's online visibility and generating more project opportunities.",
-      "Collaborated with the design team to create a visually appealing and user-friendly website that aligns with the company's brand identity.",
+      "Leveraged the power of Nuxt.js 3 and server-side rendering to enhance SEO performance across key metrics, resulting in higher search engine rankings and a noticeable uptick in organic traffic.",
+      "Implemented performance optimisations, SEO best practices, and user-centric design improvements that led to a 57% surge in website traffic. This directly contributed to greater brand visibility and an increase in inbound project leads.",
+      "Worked closely with the design team to translate Figma mockups into a clean, modern, and fully responsive interface. Ensured the visual identity was consistent across the site while enhancing usability on both desktop and mobile devices.",
     ],
     img: hat,
   },
@@ -136,9 +138,9 @@ const data = [
     description:
       "A web application for businesses to generate an overview of their strengths and weaknesses.",
     features: [
-      "Integrating the typeform API to allow users to fill out a questionnaire to generate a report.",
-      "Comprehensive admin dashboard that offers full control over the user experience. Admins can view and manage user information, preview reports to ensure alignment with business goals, and perform bulk actions like adding users or exporting data.",
-      "Report generation system that allows users to generate a report based on their questionnaire answers.",
+      "Integrated the Typeform API to allow users to complete structured questionnaires that feed directly into a custom-built report generation engine. This seamless flow ensures accurate data capture and enhances the user experience with a professional and interactive survey interface.",
+      "Engineered a dynamic report creation system that processes user responses and generates visualised insights in real time. Users can export their results as downloadable PDFs or email the report directly from the interface—powered by html2canvas and jsPDF for fast and visually consistent exports.",
+      " Built a comprehensive admin panel where administrators can manage user data, preview individual reports for quality assurance, and perform bulk actions such as exporting datasets or adding new users. This enables alignment with internal business goals while streamlining operations.",
     ],
     pills: [
       "React",
@@ -173,10 +175,10 @@ const data = [
       "Decentralised web application allowing service providers to offer their services and customers to book them by registering e-wallets.",
     img: quidland,
     features: [
-      "Secure e-wallet system that allows users to deposit, withdraw, and transfer funds.",
-      "Integrated MangoPay API to facilitate secure transactions between users and service providers.",
-      "Designed and implemented a user-friendly interface that simplifies the booking process, making it easy for customers to find and book services.",
-      "Data visualization feature that provides service providers with insights into their earnings, bookings, and service popularity breakdown.",
+      "Built a robust e-wallet feature allowing users to deposit, withdraw, and transfer funds seamlessly within the platform. This system ensures transactional integrity while giving users full control over their financial interactions.",
+      "Integrated the MangoPay API to handle complex payment scenarios, including escrow, payouts, and multi-party transactions. This enabled secure and compliant payment handling between service providers and customers, with built-in fraud protection and KYC/AML support.",
+      "Designed and implemented a clean, responsive user interface that simplifies the service discovery and booking process. Customers can browse offerings, check availability, and confirm bookings with minimal friction—resulting in a smoother user journey and increased conversion rates.",
+      "Developed an analytics dashboard offering service providers real-time insights into their performance. Visual breakdowns of earnings, booking trends, and service popularity empower providers to make informed business decisions and optimise their offerings.",
     ],
     pills: [
       "React",
@@ -193,13 +195,13 @@ const data = [
   {
     title: "PostTag PAYG Dashboard",
     description:
-      "An internal dashboard for PostTag clients to manage their data usage and spending.",
+      "Built a robust internal dashboard for PostTag clients to manage their Pay-As-You-Go (PAYG) transactions, monitor data usage, and maintain control over spending—designed to provide transparency, automation, and ease of use.",
     img: posttag,
     features: [
-      "Integrated PAYG transactions to allow users to register and make payments on the platform.",
-      "Data visualisation feature that provides users with insights into their data usage, spending, and account balance.",
-      "Invoice generation based on PAYG transactions, allowing users to download and print their invoices.",
-      "Admin specific features to allow for referal management, user management and credit management.",
+      "Implemented a seamless transaction system enabling users to register, top up their accounts, and make PAYG payments directly through the platform. This system ensures secure and efficient management of microtransactions without manual intervention.",
+      "Developed dynamic visual dashboards that display key metrics such as API usage, account balance, and historical spending trends. These insights help clients make data-driven decisions and maintain tight control over their usage costs.",
+      "Built a feature to generate downloadable, print-ready invoices based on user transactions. Users can easily access and export their billing history for accounting or audit purposes, reducing support overhead.",
+      "Implemented advanced admin tools to manage referrals, oversee user accounts, adjust credits, and monitor usage across the platform. These features enable internal teams to operate efficiently and support clients with greater flexibility.",
     ],
     pills: [
       "React",
